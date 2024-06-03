@@ -1,0 +1,167 @@
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.151)), url('./background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 525px;
+  min-width: 400px;
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 125px;
+  padding-left: 60px;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .body {
+    max-width: 10%;
+  }
+  .container {
+    max-width: 10%;
+    padding: 10px;
+  }
+}
+
+.notification {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000a2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 84px);
+  max-width: 450px;
+  z-index: 1000;
+  text-overflow: ellipsis;
+}
+
+.notification button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000bb;
+  border: 0px;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+
+.button {
+  background-color: #0000008c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  background-color: #000000bb;
+  margin-right: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  background-color: #0000008c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  right: 10px;
+}
+
+.delete-button:hover {
+  background-color: #000000;
+}
+
+.banner {
+  width: 100%;
+  height: 75px;
+  color: rgba(0, 0, 0, 0.911);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bannerText {
+  color: white;
+  font-weight: 650;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 27px;
+  margin-left: 20px;
+}
+
+.checkbox {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #ffffff0c;
+}
+
+.checkbox:checked::before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 34px;
+}
+
+.label {
+  font-size: 16px;
+  vertical-align: middle;
+  color: white;
+}

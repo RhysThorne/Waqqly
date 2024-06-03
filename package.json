@@ -1,0 +1,16 @@
+{
+  "name": "waqqly-summative",
+  "version": "1.0.0",
+  "description": "A project with both frontend and backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node backend/index.js",
+    "client": "cd frontend && npm start"
+  },
+  "author": "RhysThorne",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
