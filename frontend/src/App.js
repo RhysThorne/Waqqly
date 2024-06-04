@@ -81,7 +81,7 @@ import axios from 'axios';
 import './App.css';
 import backgroundImage from './background.jpg';
 
-const BASE_URL = 'http://4.158.32.91:5000';
+const BASE_URL = 'http://192.168.0.21:5000';
 
 function App() {
   const [pet, setPet] = useState({ name: '', age: '', ageUnit: 'Years', breed: '' });

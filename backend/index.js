@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const routes = require('./routes/routes');
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const port = process.env.PORT || 5000;
 const app = express();

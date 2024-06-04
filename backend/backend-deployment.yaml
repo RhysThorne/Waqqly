@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: rhysthorne/backend:latest
+        image: <Username>/backend:latest
         ports:
         - containerPort: 5000
         imagePullPolicy: Always

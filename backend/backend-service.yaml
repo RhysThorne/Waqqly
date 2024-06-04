@@ -10,4 +10,4 @@ spec:
       port: 5000
       targetPort: 5000
   type: LoadBalancer
-  loadBalancerIP: 4.250.85.18
+  # loadBalancerIP: <Static IP>
