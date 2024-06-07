@@ -19,7 +19,7 @@
 
 //   const fetchData = async (endpoint, setter) => {
 //     try {
-//       const response = await axios.get(`http://192.168.0.21:5000/${endpoint}`);
+//       const response = await axios.get(`http://localhost:5000/${endpoint}`);
 //       setter(response.data);
 //     } catch (error) {
 //       console.error(`Error fetching ${endpoint}:`, error);
@@ -45,7 +45,7 @@
 //     }
 
 //     try {
-//       await axios.post(`http://192.168.0.21:5000/${endpoint}`, item);
+//       await axios.post(`http://localhost:5000/${endpoint}`, item);
 //       setMessage(`${endpoint.charAt(0).toUpperCase() + endpoint.slice(1)} registered successfully!`);
 //       setSubmittedItems([...submittedItems, item]);
 
@@ -64,7 +64,7 @@
 
 //   const deleteItem = async (id, endpoint) => {
 //     try {
-//       await axios.delete(`http://192.168.0.21:5000/${endpoint}/${id}`);
+//       await axios.delete(`http://localhost:5000/${endpoint}/${id}`);
 //       setMessage(`${endpoint.charAt(0).toUpperCase() + endpoint.slice(1)} deleted successfully!`);
 //       fetchData(endpoint, endpoint === 'pets' ? setPets : setDogWalkers);
 //     } catch (error) {
@@ -81,7 +81,7 @@ import axios from 'axios';
 import './App.css';
 import backgroundImage from './background.jpg';
 
-const BASE_URL = 'http://192.168.0.21:5000';
+const BASE_URL = 'http://localhost:5000';
 
 function App() {
   const [pet, setPet] = useState({ name: '', age: '', ageUnit: 'Years', breed: '' });
